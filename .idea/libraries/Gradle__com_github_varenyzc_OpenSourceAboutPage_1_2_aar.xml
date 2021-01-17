@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.varenyzc:OpenSourceAboutPage:1.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7023afa46e7cfc4eb3c3999ae41d3ddd/jetified-OpenSourceAboutPage-1.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7023afa46e7cfc4eb3c3999ae41d3ddd/jetified-OpenSourceAboutPage-1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7023afa46e7cfc4eb3c3999ae41d3ddd/jetified-OpenSourceAboutPage-1.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.varenyzc/OpenSourceAboutPage/1.2/71b9961d17697d79913e75994ebbc14d76b9654c/OpenSourceAboutPage-1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

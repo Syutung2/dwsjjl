@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cn.syutung.ShuJuJingLing">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:icon="@mipmap/qqqq"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/qqqq_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.数据小助手APP"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity android:name=".OpenSourceActivity"></activity>
+        <activity android:name=".SetActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".Question.QuestionActivity" />
+        <activity android:name=".Question.ChuLiActivity" />
+        <activity android:name=".Question.NoQuestionActivity" />
+        <activity android:name=".PDFActivity" />
+        <activity android:name=".Activity2" />
+        <activity android:name=".Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shouyyw2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity2">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="318dp"
+        android:layout_height="102dp"
+        android:layout_weight="12"
+        android:gravity="center"
+        android:text="数据小助手 ©2020-2023 \n BeiJing "
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/menus2"
+        app:layout_constraintStart_toStartOf="@+id/menus2"
+        app:layout_constraintTop_toBottomOf="@+id/menus2" />
+
+    <ListView
+        android:id="@+id/menus2"
+        android:layout_width="327dp"
+        android:layout_height="601dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.559"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3">
+
+    </ListView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

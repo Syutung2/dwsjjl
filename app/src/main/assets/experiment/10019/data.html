@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>迈克尔孙干涉仪的调节和使用--数据处理--数据小助手</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+<!--引入css文件-->
+    <style>@font-face {font-family: 'FontAwesome';src: url('../../static/common/fonts/fontawesome-webfont-v=4.4.0.eot');src: url('../../static/common/fonts/fontawesome-webfont-.eot#iefix&v=4.4.0') format('embedded-opentype'), url('../../static/common/fonts/fontawesome-webfont-v=4.4.0.woff2') format('woff2'), url('../../static/common/fonts/fontawesome-webfont-v=4.4.0.woff') format('woff'), url('../../static/common/fonts/fontawesome-webfont-v=4.4.0.ttf') format('truetype'), url('../../static/common/fonts/fontawesome-webfont-v=4.4.0.svg#fontawesomeregular') format('svg');font-weight: normal;font-style: normal;}</style>
+    <link rel="stylesheet" href="../../static/common/css/main.css">
+    <link rel="stylesheet" href="../../static/default/css/base.css"/>
+    <link rel="stylesheet" href="../../static/common/css/animate.min.css"/>
+        <!--引入JavaScript文件-->
+    <script>const Latex_host = "https://latex.codecogs.com/gif.latex?";</script>
+    <script src="../../static/common/js/jquery.min.js"></script>
+    <script src="../../static/common/js/main.js"></script>
+    <script src="../../static/common/js/respond.js"></script>
+    <script src="../../static/default/js/main.js"></script>
+    <script src="../../static/default/js/test.js"></script>
+    </head>
+<body>
+<header class="container-layout bg-black fixed-top-left border-bottom border-black">
+
+</header>
+<div id="null-nav"></div>
+<div class="container">
+    <!-- 主体部分 这里为所有试验部分的主入口文件，转至个试验分文件夹-->
+        <!--    面包屑导航-->
+        <div class="margin-big-top">
+            <div class="text-center line" id="shuju">
+                                        <script src="../../static/default/js/calculate/10019.js"></script>
+<div id="calculateNav" class="line-middle text-right" style="margin-top: -15px;"></div>
+<div class="line margin-big-top">
+    <div class="xb2 xm2 hidden-s hidden-l text-center timeline-nav">
+        <div class="timeline-title">第一步</div>
+        <div class="timteline-point"></div>
+    </div>
+    <div class="xb10 xm10 xs12 xl12 timeline-content">
+        <h1>实验数据设置面板</h1>
+        <div class="timeline-set-table">
+            <fieldset class="xb9 xm9 xs12 xl12 help-text text-left margin-big-bottom">
+                <legend>关于这个表格</legend>
+                <div>
+                                            <p>1.表格中项目列中带有*号的项目为必填项，你必须填入一个有意义的属性值，它可能是一个数字也可能是一个单位等。</p>
+                        <p>2.表格中属性值列元素可以自由编辑，我们会给你提供一个默认值，如你想要更改它，那么你可以鼠标左键单击这个元素，即可更改它。</p>
+                        <p>3.当你的鼠标进入并开始编辑属性值时，我们会在你完成输入，鼠标离开这个元素时，对你的输入加以简单判断，并会给你提示。</p>
+                                    </div>
+            </fieldset>
+            <div class="set-content">
+                        <div id="A" class="hidden init">
+        <div class="xb9 xm9 xs12 xl12">
+            <table class="table table-hover table-condensed table-bordered js_table text-center">
+                <thead>
+                <tr>
+                    <th>项目</th>
+                    <th>属性值</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div>数据单位</div>
+                    </td>
+                    <td><input id="unit_A" class="text-center cursor_disabled" disabled="true" type="text" value="mm"/>
+                    </td>
+                    <td class="table-detection" style="border-style: none;">
+                        <span id="table-detection-unit" class="table-detection-y icon-check-circle-o">&nbsp;检测通过</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>数据组数</div>
+                    </td>
+                    <td><input autofocus id="group_A" class="text-center" type="text" value="10"
+                               onblur="fn_group(this,'A')"/></td>
+                    <td class="table-detection" style="border-style: none;">
+                        <span id="table-detection-group" class="table-detection-y icon-check-circle-o">&nbsp;检测通过</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>所选光的标准波长（/nm）</td>
+                    <td><input data-for="table-detection-bz" id="bz" class="text-center" type="text" value="632.8"
+                               onblur="fn_preg(this,'^\\d+(\\.\\d+)?$')"/></td>
+                    <td class="table-detection" style="border-style: none;">
+                        <span id="table-detection-bz" class="table-detection-y icon-check-circle-o">&nbsp;检测通过</span>
+                    </td>
+                </tr>
+                </tbody>
+                </table>
+        </div>
+        <div class="xb9 xm9 xs12 xl12 initButGroup">
+            <button class="xb5 xb2-move xm5 xm2-move xs7 xl7 xs0-move xl0-move button border-main help-button button-big"
+                    onclick="$('.help-text').toggle();" title="点击打开帮助">显示/隐藏帮助
+            </button>
+            <button id="setTab_A" data-for="A" class="x4 x1-move button border-main set-tab button-big"
+                    title="当前面的所有项检测通过时，点击这里完成制表操作">下一步
+            </button>
+        </div>
+    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="line margin-big-top">
+    <div class="xb2 xm2 hidden-s hidden-l text-center timeline-nav">
+        <div class="timeline-title">第二步</div>
+        <div class="timteline-point"></div>
+    </div>
+    <div id="input" class="xb10 xm10 xs12 xl12 timeline-content">
+        <h1>实验数据录入面板</h1>
+        <div class="x12">
+            <div class="padding-top" id="shiyan_input"></div>
+        </div>
+    </div>
+</div>
+<div class="line margin-big-top">
+    <div class="xb2 xm2 hidden-s hidden-l text-center timeline-nav">
+        <div class="timeline-title">第三步</div>
+        <div class="timteline-point"></div>
+    </div>
+    <div id="output" class="xb10 xm10 xs12 xl12 timeline-content">
+        <h1>数据处理输出面板</h1>
+        <div class="padding-top output text-left" id="shiyan_output"></div>
+    </div>
+</div>            </div>
+        </div>
+    <!-- 主体部分结束 -->
+</div>
+
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":["mshare","qzone","sqq","weixin","tieba","tsina","tqq","bdysc","renren","bdxc","kaixin001","tqf","douban","bdhome","thx","ibaidu","mogujie","fx","youdao","sdo","qingbiji","people","mail","isohu","ty","fbook","twi","linkedin","h163","evernotecn","copy"],"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"2","bdPos":"right","bdTop":"37.5"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</body>
+</html>
